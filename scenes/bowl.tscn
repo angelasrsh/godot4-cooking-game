@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://e6q4ricmpr2k"]
+
+[ext_resource type="PackedScene" uid="uid://fie0jqp113iw" path="res://scenes/item_container.tscn" id="1_7easw"]
+[ext_resource type="Texture2D" uid="uid://stsrbgbn4yo5" path="res://graphics/Bowl.png" id="2_ephha"]
+
+[node name="bowl" instance=ExtResource("1_7easw")]
+dragSprite = ExtResource("2_ephha")
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-7, -3.50001)
+scale = Vector2(0.154589, 0.187948)
+texture = ExtResource("2_ephha")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-6, -1.5)

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b51jtokeq4srx"]
+
+[ext_resource type="PackedScene" uid="uid://fie0jqp113iw" path="res://scenes/item_container.tscn" id="1_n8rgu"]
+[ext_resource type="Texture2D" uid="uid://2tyu22ul62ra" path="res://graphics/Egg.png" id="2_yrc5y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t5b2o"]
+radius = 58.5875
+
+[node name="Egg" instance=ExtResource("1_n8rgu")]
+dragSprite = ExtResource("2_yrc5y")
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-0.500005, 0.0542188)
+scale = Vector2(0.182229, 0.180879)
+texture = ExtResource("2_yrc5y")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+shape = SubResource("CircleShape2D_t5b2o")

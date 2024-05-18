@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CookingGame"
-run/main_scene="res://scenes/item_container.tscn"
+run/main_scene="res://scenes/kitchen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 

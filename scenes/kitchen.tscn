@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://j8p4umkpljnd"]
+
+[ext_resource type="PackedScene" uid="uid://hskecqtd34y2" path="res://scenes/station.tscn" id="1_ob8jg"]
+[ext_resource type="PackedScene" uid="uid://fie0jqp113iw" path="res://scenes/item_container.tscn" id="2_b3wbg"]
+[ext_resource type="PackedScene" uid="uid://b51jtokeq4srx" path="res://scenes/egg.tscn" id="3_osj5e"]
+[ext_resource type="PackedScene" uid="uid://e6q4ricmpr2k" path="res://scenes/bowl.tscn" id="4_c8r5x"]
+
+[node name="Kitchen" type="Node2D"]
+
+[node name="Station" parent="." instance=ExtResource("1_ob8jg")]
+position = Vector2(639, 398)
+
+[node name="Item_Container" parent="." instance=ExtResource("2_b3wbg")]
+position = Vector2(134, 149)
+
+[node name="Egg" parent="." instance=ExtResource("3_osj5e")]
+position = Vector2(232, 445)
+
+[node name="Egg2" parent="." instance=ExtResource("3_osj5e")]
+position = Vector2(74, 314)
+
+[node name="bowl" parent="." instance=ExtResource("4_c8r5x")]
+position = Vector2(366, 136)
